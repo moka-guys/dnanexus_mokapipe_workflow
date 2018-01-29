@@ -1,20 +1,20 @@
 Result 1:
-ID                  workflow-F645v480jy1Xx2jxF6BFYfQ2
+ID                  workflow-F7Xxgfj0jy1QZk519px5g39x
 Class               workflow
 Project             project-ByfFPz00jy1fk6PjpZ95F27J
 Folder              /Workflows
-Name                GATK3.5_v2.7
+Name                GATK3.5_v2.8
 State               open
 Visibility          visible
 Types               -
-Properties          github release=v2.7
+Properties          github release=v2.8
 Tags                -
 Outgoing links      -
-Created             Mon Aug  7 13:33:21 2017
-Created by          andyb
-Last modified       Mon Aug  7 13:36:55 2017
+Created             Tue Oct 17 11:30:51 2017
+Created by          aledjones
+Last modified       Tue Oct 17 11:31:48 2017
 Edit Version        17
-Title               GATK3.5_v2.7
+Title               GATK3.5_v2.8
 Summary             
 Output Folder       -
 Input Spec          stage-Bz3YpP80jy1x7G5QfG3442gX: Advanced:
@@ -234,5 +234,6 @@ Stage 6             stage-F2gPqFQ025p601qgGq0QVvX2
 Stage 7             stage-F35zBKQ0jy1XpfzYPZY4bgX6
   Executable        applet-F3x29B007K0YGfqk0vFPp5qQ
 Stage 8             stage-Byz9Bj80jy1k2VB9xVXBp0Fp
-  Executable        app-ingenuity_variant_transfer/1.0.5
+  Executable        app-ingenuity_variant_transfer/1.0.6
+initializedFrom     workflow-F645v480jy1Xx2jxF6BFYfQ2
 temporary           false
