@@ -1,20 +1,20 @@
 Result 1:
-ID                  workflow-FZxP8Bj0jy1VyqJ3J1yzbZ94
+ID                  workflow-FgkpgzQ0jy1jqy3PG3FF6x12
 Class               workflow
 Project             project-ByfFPz00jy1fk6PjpZ95F27J
 Folder              /Workflows
-Name                GATK3.5_v2.10
+Name                GATK3.5_v2.11
 State               open
 Visibility          visible
 Types               -
 Properties          github release=v2.10
 Tags                -
 Outgoing links      -
-Created             Fri Jul 26 13:38:03 2019
+Created             Fri Dec 13 15:19:26 2019
 Created by          aledjones
-Last modified       Fri Jul 26 13:38:24 2019
+Last modified       Fri Dec 13 15:19:26 2019
 Edit Version        0
-Title               GATK3.5_v2.10
+Title               GATK3.5_v2.11
 Summary             
 Output Folder       -
 Input Spec          stage-Bz3YpP80jy1x7G5QfG3442gX: Advanced:
@@ -141,23 +141,6 @@ Input Spec          stage-Bz3YpP80jy1x7G5QfG3442gX: Advanced:
                   (boolean, default=true)]
                     [stage-F35zBKQ0jy1XpfzYPZY4bgX6.coverage_level (string,
                   default="30")]
-                stage-Byz9Bj80jy1k2VB9xVXBp0Fp:
-                    [stage-Byz9Bj80jy1k2VB9xVXBp0Fp.vcfs (array:file,
-                  default=[{"$dnanexus_link":
-                  {"outputField": "vcf", "stage":
-                  "stage-F2gPqFQ025p601qgGq0QVvX2"}}])]
-                    [stage-Byz9Bj80jy1k2VB9xVXBp0Fp.email (string,
-                  default="joowook.ahn@nhs.net")]
-                    [stage-Byz9Bj80jy1k2VB9xVXBp0Fp.desc_source (string,
-                  default="1) Existing DNAnexus tags and
-                  properties")]
-                    [stage-Byz9Bj80jy1k2VB9xVXBp0Fp.description (string,
-                  default="")]
-                    [stage-Byz9Bj80jy1k2VB9xVXBp0Fp.description_file (file)]
-                    [stage-Byz9Bj80jy1k2VB9xVXBp0Fp.bam_files (array:file)]
-                    [stage-Byz9Bj80jy1k2VB9xVXBp0Fp.bai_files (array:file)]
-                    [stage-Byz9Bj80jy1k2VB9xVXBp0Fp.reference_genome_name
-                  (string, default="GRCh37")]
                 stage-F28y4qQ0jy1fkqfy5v2b8byx: GATK Indel Realignment:
                     [stage-F28y4qQ0jy1fkqfy5v2b8byx.extra_rtc_options
                   (string)]
@@ -196,8 +179,6 @@ Output Spec         stage-F2gPqFQ025p601qgGq0QVvX2:
                     [stage-F28y4qQ0jy1fkqfy5v2b8byx.vcf_tbi (file)]
                     [stage-F28y4qQ0jy1fkqfy5v2b8byx.gvcf (file)]
                     [stage-F28y4qQ0jy1fkqfy5v2b8byx.gvcf_tbi (file)]
-                stage-Byz9Bj80jy1k2VB9xVXBp0Fp:
-                    stage-Byz9Bj80jy1k2VB9xVXBp0Fp.results_url (string)
 Stage 0             stage-Bz3YpP80jy1Y1pZKbZ35Bp0x
   Executable        applet-FBPFfkj0jy1Q114YGQ0yQX8Y
 Stage 1             stage-Bz3YpP80jy1x7G5QfG3442gX
@@ -212,5 +193,3 @@ Stage 5             stage-F2gPqFQ025p601qgGq0QVvX2
   Executable        applet-FBPq4xQ0jy1g96432f1gJqXy
 Stage 6             stage-F35zBKQ0jy1XpfzYPZY4bgX6
   Executable        applet-FVf1Kx00jy1fjpyY64fvJvpq
-Stage 7             stage-Byz9Bj80jy1k2VB9xVXBp0Fp
-  Executable        app-ingenuity_variant_transfer/1.0.6
