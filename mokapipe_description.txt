@@ -1,20 +1,20 @@
 Result 1:
-ID                  workflow-FgkpgzQ0jy1jqy3PG3FF6x12
+ID                  workflow-FkF2by80jy1p262jFQK4pJ8f
 Class               workflow
 Project             project-ByfFPz00jy1fk6PjpZ95F27J
 Folder              /Workflows
-Name                GATK3.5_v2.11
+Name                GATK3.5_v2.12
 State               open
 Visibility          visible
 Types               -
-Properties          github release=v2.10
+Properties          github release=v2.12
 Tags                -
 Outgoing links      -
-Created             Fri Dec 13 15:19:26 2019
+Created             Wed Feb 26 08:23:21 2020
 Created by          aledjones
-Last modified       Fri Dec 13 15:19:26 2019
+Last modified       Wed Feb 26 08:23:21 2020
 Edit Version        0
-Title               GATK3.5_v2.11
+Title               GATK3.5_v2.12
 Summary             
 Output Folder       -
 Input Spec          stage-Bz3YpP80jy1x7G5QfG3442gX: Advanced:
@@ -192,4 +192,4 @@ Stage 4             stage-F28y4qQ0jy1fkqfy5v2b8byx
 Stage 5             stage-F2gPqFQ025p601qgGq0QVvX2
   Executable        applet-FBPq4xQ0jy1g96432f1gJqXy
 Stage 6             stage-F35zBKQ0jy1XpfzYPZY4bgX6
-  Executable        applet-FVf1Kx00jy1fjpyY64fvJvpq
+  Executable        applet-Fk6YKfj0jy1yKj3K58QbJB0z
