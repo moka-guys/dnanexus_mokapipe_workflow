@@ -7,13 +7,13 @@ Name                GATK3.5_v2.13
 State               open
 Visibility          visible
 Types               -
-Properties          github release=v2.12
+Properties          -
 Tags                -
 Outgoing links      -
 Created             Thu Oct  7 12:14:21 2021
 Created by          rachelduffin
-Last modified       Thu Oct  7 12:14:21 2021
-Edit Version        0
+Last modified       Thu Oct  7 14:30:08 2021
+Edit Version        9
 Title               GATK3.5_v2.13
 Summary             
 Output Folder       -
