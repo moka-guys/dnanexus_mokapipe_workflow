@@ -1,20 +1,20 @@
 Result 1:
-ID                  workflow-G5PJJ380jy1fP4zJ3Bgq3VyX
+ID                  workflow-G8V1kx00fB6v69Ff14F3YZPq
 Class               workflow
-Project             project-ByfFPz00jy1fk6PjpZ95F27J
-Folder              /Workflows
-Name                GATK3.5_v2.13
+Project             project-G8V1ZP00fB6VjPFKBK6Bq3Kv
+Folder              /
+Name                GATK3.5_v2.14
 State               open
 Visibility          visible
 Types               -
 Properties          -
 Tags                -
 Outgoing links      -
-Created             Thu Oct  7 12:14:21 2021
-Created by          rachelduffin
-Last modified       Thu Oct  7 14:30:08 2021
-Edit Version        9
-Title               GATK3.5_v2.13
+Created             Fri Mar  4 14:06:44 2022
+Created by          aledjones
+Last modified       Tue Apr 19 12:17:46 2022
+Edit Version        44
+Title               GATK3.5_v2.14
 Summary             
 Output Folder       -
 Input Spec          stage-Bz3YpP80jy1Y1pZKbZ35Bp0x:
@@ -133,6 +133,42 @@ Input Spec          stage-Bz3YpP80jy1Y1pZKbZ35Bp0x:
                   "stage-F28y4qQ0jy1fkqfy5v2b8byx",
                   "outputField": "vcf_tbi"}})]
                     stage-G5Kpgv80zB02Q64zFf94G05F.bedfile (file)
+                stage-G9BfkZQ0fB6jZY7v1PfJ81F6:
+                    [stage-G9BfkZQ0fB6jZY7v1PfJ81F6.GVCF (file,
+                  default={"$dnanexus_link": {"stage":
+                  "stage-F28y4qQ0jy1fkqfy5v2b8byx",
+                  "outputField": "gvcf"}})]
+                    stage-G9BfkZQ0fB6jZY7v1PfJ81F6.BEDfile (file)
+                    [stage-G9BfkZQ0fB6jZY7v1PfJ81F6.fasta_file (file,
+                  default={"$dnanexus_link": {"project":
+                  "project-ByfFPz00jy1fk6PjpZ95F27J", "id":
+                  "file-BxVGV9Q022qPQ5f2pbQYqbP4"}})]
+                    [stage-G9BfkZQ0fB6jZY7v1PfJ81F6.skip (boolean,
+                  default=true)]
+                stage-G8V205j0fB6QGKXQ2gZ5pB1z:
+                    [stage-G8V205j0fB6QGKXQ2gZ5pB1z.query_vcf (file,
+                  default={"$dnanexus_link": {"stage":
+                  "stage-F28y4qQ0jy1fkqfy5v2b8byx",
+                  "outputField": "vcf"}})]
+                    [stage-G8V205j0fB6QGKXQ2gZ5pB1z.truth_vcf (file,
+                  default={"$dnanexus_link": {"project":
+                  "project-ByfFPz00jy1fk6PjpZ95F27J", "id":
+                  "file-F3V5kgj0jy1b0qFG53k8Ffj4"}})]
+                    [stage-G8V205j0fB6QGKXQ2gZ5pB1z.panel_bed (file,
+                  default={"$dnanexus_link": {"stage":
+                  "stage-F9GK4QQ0jy1qj14PPZxxq3VG",
+                  "inputField": "vendor_exome_bedfile"}})]
+                    [stage-G8V205j0fB6QGKXQ2gZ5pB1z.high_conf_bed (file,
+                  default={"$dnanexus_link": {"project":
+                  "project-ByfFPz00jy1fk6PjpZ95F27J", "id":
+                  "file-F45P6k80jy1jpv6J9G8gG3P0"}})]
+                    stage-G8V205j0fB6QGKXQ2gZ5pB1z.prefix (string)
+                    [stage-G8V205j0fB6QGKXQ2gZ5pB1z.na12878 (boolean,
+                  default=false)]
+                    [stage-G8V205j0fB6QGKXQ2gZ5pB1z.genome_reference
+                  (string, default="GRCh37")]
+                    [stage-G8V205j0fB6QGKXQ2gZ5pB1z.skip (boolean,
+                  default=false)]
                 stage-F35zBKQ0jy1XpfzYPZY4bgX6:
                     stage-F35zBKQ0jy1XpfzYPZY4bgX6.sambamba_bed (file)
                     [stage-F35zBKQ0jy1XpfzYPZY4bgX6.bamfile (file,
@@ -145,8 +181,20 @@ Input Spec          stage-Bz3YpP80jy1Y1pZKbZ35Bp0x:
                   "outputField": "bai"}})]
                 [stage-F35zBKQ0jy1XpfzYPZY4bgX6.merge_overlapping_mate_reads
                   (boolean, default=true)]
+                    [stage-F35zBKQ0jy1XpfzYPZY4bgX6.exclude_failed_quality_c
+                  ontrol (boolean, default=true)]
+                    [stage-F35zBKQ0jy1XpfzYPZY4bgX6.exclude_duplicate_reads
+                  (boolean, default=true)]
                     [stage-F35zBKQ0jy1XpfzYPZY4bgX6.coverage_level (string,
                   default="30")]
+                [stage-F35zBKQ0jy1XpfzYPZY4bgX6.additional_sambamba_flags
+                  (string, default="")]
+                [stage-F35zBKQ0jy1XpfzYPZY4bgX6.additional_filter_commands
+                  (string, default="")]
+                    [stage-F35zBKQ0jy1XpfzYPZY4bgX6.min_base_qual (int,
+                  default=25)]
+                    [stage-F35zBKQ0jy1XpfzYPZY4bgX6.min_mapping_qual (int,
+                  default=20)]
 Output Spec         stage-Bz3YpP80jy1Y1pZKbZ35Bp0x:
                     stage-Bz3YpP80jy1Y1pZKbZ35Bp0x.report_html (file)
                     stage-Bz3YpP80jy1Y1pZKbZ35Bp0x.stats_txt (file)
@@ -169,6 +217,12 @@ Output Spec         stage-Bz3YpP80jy1Y1pZKbZ35Bp0x:
                     [stage-F28y4qQ0jy1fkqfy5v2b8byx.gvcf_tbi (file)]
                 stage-G5Kpgv80zB02Q64zFf94G05F:
                     stage-G5Kpgv80zB02Q64zFf94G05F.filtered_vcf (file)
+                stage-G9BfkZQ0fB6jZY7v1PfJ81F6:
+                    [stage-G9BfkZQ0fB6jZY7v1PfJ81F6.PRS_output (array:file)]
+                stage-G8V205j0fB6QGKXQ2gZ5pB1z:
+                    [stage-G8V205j0fB6QGKXQ2gZ5pB1z.detailed_results (file)]
+                    [stage-G8V205j0fB6QGKXQ2gZ5pB1z.summary_csv (file)]
+                    [stage-G8V205j0fB6QGKXQ2gZ5pB1z.summary_html (file)]
                 stage-F35zBKQ0jy1XpfzYPZY4bgX6:
                     stage-F35zBKQ0jy1XpfzYPZY4bgX6.chanjo_raw_output
                   (array:file)
@@ -187,5 +241,9 @@ Stage 4             stage-F28y4qQ0jy1fkqfy5v2b8byx
   Executable        applet-FYZ097j0jy1ZZPx30GykP63J
 Stage 5             stage-G5Kpgv80zB02Q64zFf94G05F
   Executable        applet-G5Kbv8Q0YXF4Q4xZBq4XQp6B
-Stage 6             stage-F35zBKQ0jy1XpfzYPZY4bgX6
-  Executable        applet-Fk6YKfj0jy1yKj3K58QbJB0z
+Stage 6             stage-G9BfkZQ0fB6jZY7v1PfJ81F6
+  Executable        applet-G9BfYZ00jy1k5XFB8zkzBpQx
+Stage 7             stage-G8V205j0fB6QGKXQ2gZ5pB1z
+  Executable        applet-G8V1zZQ0jy1qk9gj3j5xz1F3
+Stage 8             stage-F35zBKQ0jy1XpfzYPZY4bgX6
+  Executable        applet-G6vyyf00jy1kPkX9PJ1YkxB1
