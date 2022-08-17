@@ -1,20 +1,20 @@
 Result 1:
-ID                  workflow-G9bv4v80FV9g6F9X4fGQvzK3
+ID                  workflow-GFyJ6xj03Zv1vXYf4jxk51bk
 Class               workflow
-Project             project-G9bqfPj0FV9YBB9q4PBVPf21
-Folder              /
-Name                GATK3.5_v2.15
+Project             project-GFxkZVQ03ZvFGzB2BPgXF12y
+Folder              /workflow
+Name                GATK3.5_v2.16
 State               open
 Visibility          visible
 Types               -
 Properties          -
 Tags                -
 Outgoing links      -
-Created             Fri Apr 29 11:48:17 2022
+Created             Wed Aug 17 12:39:35 2022
 Created by          aledjones
-Last modified       Fri Apr 29 11:54:24 2022
-Edit Version        18
-Title               GATK3.5_v2.14
+Last modified       Wed Aug 17 13:13:18 2022
+Edit Version        20
+Title               GATK3.5_v2.16
 Summary             
 Output Folder       -
 Input Spec          stage-Bz3YpP80jy1x7G5QfG3442gX: Advanced:
@@ -52,6 +52,20 @@ Input Spec          stage-Bz3YpP80jy1x7G5QfG3442gX: Advanced:
                   (string, default="GRCh37")]
                     [stage-G8V205j0fB6QGKXQ2gZ5pB1z.skip (boolean,
                   default=false)]
+                stage-GFxkbjj03ZvJp10YPXZ9XFVJ:
+                    [stage-GFxkbjj03ZvJp10YPXZ9XFVJ.in (array:file,
+                  default=[{"$dnanexus_link":
+                  {"outputField": "filtered_vcf", "stage":
+                  "stage-G5Kpgv80zB02Q64zFf94G05F"}},
+                  {"$dnanexus_link": {"project":
+                  "project-ByfFPz00jy1fk6PjpZ95F27J", "id":
+                  "file-GFxpyfj0jy1qxYj3P968Pg2f"}}])]
+                    [stage-GFxkbjj03ZvJp10YPXZ9XFVJ.cmd (string, default="sh
+                  bcftools_stats*.sh")]
+                    [stage-GFxkbjj03ZvJp10YPXZ9XFVJ.mount_inputs (boolean,
+                  default=false)]
+                    [stage-GFxkbjj03ZvJp10YPXZ9XFVJ.image (string)]
+                    [stage-GFxkbjj03ZvJp10YPXZ9XFVJ.image_file (file)]
                 stage-Byz9BJ80jy1k2VB9xVXBp0Fg: Advanced:
                     [stage-Byz9BJ80jy1k2VB9xVXBp0Fg.advanced_options
                   (string)]
@@ -199,6 +213,8 @@ Output Spec         stage-G8V205j0fB6QGKXQ2gZ5pB1z:
                     [stage-G8V205j0fB6QGKXQ2gZ5pB1z.detailed_results (file)]
                     [stage-G8V205j0fB6QGKXQ2gZ5pB1z.summary_csv (file)]
                     [stage-G8V205j0fB6QGKXQ2gZ5pB1z.summary_html (file)]
+                stage-GFxkbjj03ZvJp10YPXZ9XFVJ:
+                    [stage-GFxkbjj03ZvJp10YPXZ9XFVJ.out (array:file)]
                 stage-Bz3YpP80jy1x7G5QfG3442gX:
                     stage-Bz3YpP80jy1x7G5QfG3442gX.report_html (file)
                     stage-Bz3YpP80jy1x7G5QfG3442gX.stats_txt (file)
@@ -247,4 +263,6 @@ Stage 7             stage-G8V205j0fB6QGKXQ2gZ5pB1z
   Executable        applet-G8V1zZQ0jy1qk9gj3j5xz1F3
 Stage 8             stage-F35zBKQ0jy1XpfzYPZY4bgX6
   Executable        applet-G6vyyf00jy1kPkX9PJ1YkxB1
-initializedFrom     workflow-G9bv4YQ0FV9vFvX14P76vf4X
+Stage 9             stage-GFxkbjj03ZvJp10YPXZ9XFVJ
+  Executable        app-swiss-army-knife/4.7.1
+initializedFrom     workflow-GFxkbF803Zv9z7kB6XQVjpGx
