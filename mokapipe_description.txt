@@ -1,24 +1,24 @@
 Result 1:
-ID                  workflow-GKX2yQ00jy1qgj2P4bz42y1f
-Class               workflow
-Project             project-ByfFPz00jy1fk6PjpZ95F27J
-Folder              /Workflows
-Name                GATK3.5_v2.17
-State               open
-Visibility          visible
-Types               -
-Properties          -
-Tags                -
-Outgoing links      -
-Created             Thu Dec 22 10:19:44 2022
-Created by          rachelduffin
-Last modified       Thu Dec 22 10:19:44 2022
-Edit Version        0
-Title               GATK3.5_v2.17
-Summary             
-Output Folder       -
-Input Spec          stage-Bz3YpP80jy1Y1pZKbZ35Bp0x:
-                    stage-Bz3YpP80jy1Y1pZKbZ35Bp0x.reads (file)
+ID                          workflow-GPq04280jy1k1yVkQP0fXqBg
+Class                       workflow
+Project                     project-ByfFPz00jy1fk6PjpZ95F27J
+Folder                      /Workflows
+Name                        GATK3.5_v2.18
+State                       open
+Visibility                  visible
+Types                       -
+Properties                  -
+Tags                        -
+Outgoing links              -
+Created                     Wed Feb 22 11:52:41 2023
+Created by                  rachelduffin
+Last modified               Wed Feb 22 11:52:42 2023
+Edit Version                0
+Title                       GATK3.5_v2.18
+Summary                     
+Output Folder               -
+Input Spec                  stage-Bz3YpP80jy1Y1pZKbZ35Bp0x:
+                    stage-Bz3YpP80jy1Y1pZKbZ35Bp0x.reads (array:file)
                     [stage-Bz3YpP80jy1Y1pZKbZ35Bp0x.contaminants_txt (file)]
                     [stage-Bz3YpP80jy1Y1pZKbZ35Bp0x.adapters_txt (file)]
                     [stage-Bz3YpP80jy1Y1pZKbZ35Bp0x.limits_txt (file)]
@@ -30,28 +30,9 @@ Input Spec          stage-Bz3YpP80jy1Y1pZKbZ35Bp0x:
                     [stage-Bz3YpP80jy1Y1pZKbZ35Bp0x.nogroup (boolean,
                   default=true)]
                     [stage-Bz3YpP80jy1Y1pZKbZ35Bp0x.extra_options (string)]
-                stage-Bz3YpP80jy1x7G5QfG3442gX:
-                    stage-Bz3YpP80jy1x7G5QfG3442gX.reads (file)
-                    [stage-Bz3YpP80jy1x7G5QfG3442gX.contaminants_txt (file)]
-                    [stage-Bz3YpP80jy1x7G5QfG3442gX.adapters_txt (file)]
-                    [stage-Bz3YpP80jy1x7G5QfG3442gX.limits_txt (file)]
-                stage-Bz3YpP80jy1x7G5QfG3442gX: Advanced:
-                    [stage-Bz3YpP80jy1x7G5QfG3442gX.format (string,
-                  default="auto")]
-                    [stage-Bz3YpP80jy1x7G5QfG3442gX.kmer_size (int,
-                  default=7)]
-                    [stage-Bz3YpP80jy1x7G5QfG3442gX.nogroup (boolean,
-                  default=true)]
-                    [stage-Bz3YpP80jy1x7G5QfG3442gX.extra_options (string)]
                 stage-Byz9BJ80jy1k2VB9xVXBp0Fg:
-                    [stage-Byz9BJ80jy1k2VB9xVXBp0Fg.reads_fastqgz (file,
-                  default={"$dnanexus_link": {"stage":
-                  "stage-Bz3YpP80jy1Y1pZKbZ35Bp0x",
-                  "inputField": "reads"}})]
-                    [stage-Byz9BJ80jy1k2VB9xVXBp0Fg.reads2_fastqgz (file,
-                  default={"$dnanexus_link": {"stage":
-                  "stage-Bz3YpP80jy1x7G5QfG3442gX",
-                  "inputField": "reads"}})]
+                    stage-Byz9BJ80jy1k2VB9xVXBp0Fg.reads_fastqgz (file)
+                    [stage-Byz9BJ80jy1k2VB9xVXBp0Fg.reads2_fastqgz (file)]
                     [stage-Byz9BJ80jy1k2VB9xVXBp0Fg.genomeindex_targz (file,
                   default={"$dnanexus_link": {"project":
                   "project-B6JG85Z2J35vb6Z7pQ9Q02j8", "id":
@@ -87,6 +68,9 @@ Input Spec          stage-Bz3YpP80jy1Y1pZKbZ35Bp0x:
                   "file-ByYgX700b80gf4ZY1GxvF3Jv"})]
                     stage-F9GK4QQ0jy1qj14PPZxxq3VG.vendor_exome_bedfile
                   (file)
+                stage-F9GK4QQ0jy1qj14PPZxxq3VG: Interval file:
+                    [stage-F9GK4QQ0jy1qj14PPZxxq3VG.remove_chr (boolean,
+                  default=true)]
                 stage-F9GK4QQ0jy1qj14PPZxxq3VG: Capture type:
                     [stage-F9GK4QQ0jy1qj14PPZxxq3VG.Capture_panel (string,
                   default="Hybridisation")]
@@ -132,7 +116,7 @@ Input Spec          stage-Bz3YpP80jy1Y1pZKbZ35Bp0x:
                   default={"$dnanexus_link": {"stage":
                   "stage-F28y4qQ0jy1fkqfy5v2b8byx",
                   "outputField": "vcf_tbi"}})]
-                    stage-G5Kpgv80zB02Q64zFf94G05F.bedfile (file)
+                    [stage-G5Kpgv80zB02Q64zFf94G05F.bedfile (file)]
                 stage-G9BfkZQ0fB6jZY7v1PfJ81F6:
                     [stage-G9BfkZQ0fB6jZY7v1PfJ81F6.GVCF (file,
                   default={"$dnanexus_link": {"stage":
@@ -218,14 +202,17 @@ Input Spec          stage-Bz3YpP80jy1Y1pZKbZ35Bp0x:
                   default={"$dnanexus_link": {"stage":
                   "stage-F28y4qQ0jy1fkqfy5v2b8byx",
                   "outputField": "bai"}})]
+                    [stage-GK71VJ80VQgQkjvz0vyQ8YV1.gene (string)]
+                    [stage-GK71VJ80VQgQkjvz0vyQ8YV1.poly_start (int)]
+                    [stage-GK71VJ80VQgQkjvz0vyQ8YV1.poly_end (int)]
+                    [stage-GK71VJ80VQgQkjvz0vyQ8YV1.chrom (int)]
+                    [stage-GK71VJ80VQgQkjvz0vyQ8YV1.anchor_length (int,
+                  default=2)]
                     [stage-GK71VJ80VQgQkjvz0vyQ8YV1.skip (boolean,
                   default=true)]
-Output Spec         stage-Bz3YpP80jy1Y1pZKbZ35Bp0x:
-                    stage-Bz3YpP80jy1Y1pZKbZ35Bp0x.report_html (file)
-                    stage-Bz3YpP80jy1Y1pZKbZ35Bp0x.stats_txt (file)
-                stage-Bz3YpP80jy1x7G5QfG3442gX:
-                    stage-Bz3YpP80jy1x7G5QfG3442gX.report_html (file)
-                    stage-Bz3YpP80jy1x7G5QfG3442gX.stats_txt (file)
+Output Spec                 stage-Bz3YpP80jy1Y1pZKbZ35Bp0x:
+                    stage-Bz3YpP80jy1Y1pZKbZ35Bp0x.report_html (array:file)
+                    stage-Bz3YpP80jy1Y1pZKbZ35Bp0x.stats_txt (array:file)
                 stage-Byz9BJ80jy1k2VB9xVXBp0Fg:
                     stage-Byz9BJ80jy1k2VB9xVXBp0Fg.sorted_bam (file)
                     stage-Byz9BJ80jy1k2VB9xVXBp0Fg.sorted_bai (file)
@@ -241,7 +228,7 @@ Output Spec         stage-Bz3YpP80jy1Y1pZKbZ35Bp0x:
                     [stage-F28y4qQ0jy1fkqfy5v2b8byx.gvcf (file)]
                     [stage-F28y4qQ0jy1fkqfy5v2b8byx.gvcf_tbi (file)]
                 stage-G5Kpgv80zB02Q64zFf94G05F:
-                    stage-G5Kpgv80zB02Q64zFf94G05F.filtered_vcf (file)
+                    [stage-G5Kpgv80zB02Q64zFf94G05F.filtered_vcf (file)]
                 stage-G9BfkZQ0fB6jZY7v1PfJ81F6:
                     [stage-G9BfkZQ0fB6jZY7v1PfJ81F6.PRS_output (array:file)]
                 stage-G8V205j0fB6QGKXQ2gZ5pB1z:
@@ -257,27 +244,26 @@ Output Spec         stage-Bz3YpP80jy1Y1pZKbZ35Bp0x:
                 stage-GFxkbjj03ZvJp10YPXZ9XFVJ:
                     [stage-GFxkbjj03ZvJp10YPXZ9XFVJ.out (array:file)]
                 stage-GK71VJ80VQgQkjvz0vyQ8YV1:
-                    [stage-GK71VJ80VQgQkjvz0vyQ8YV1.polyedge_output
-                  (array:file)]
-Stage 0             stage-Bz3YpP80jy1Y1pZKbZ35Bp0x
-  Executable        applet-FBPFfkj0jy1Q114YGQ0yQX8Y
-Stage 1             stage-Bz3YpP80jy1x7G5QfG3442gX
-  Executable        applet-FBPFfkj0jy1Q114YGQ0yQX8Y
-Stage 2             stage-Byz9BJ80jy1k2VB9xVXBp0Fg
-  Executable        applet-FBPv1QQ0jy1zZ3vX7jybPz9Q
-Stage 3             stage-F9GK4QQ0jy1qj14PPZxxq3VG
-  Executable        applet-FPv2Q1Q0jy1pBk9bG7GZ5zQp
-Stage 4             stage-F28y4qQ0jy1fkqfy5v2b8byx
-  Executable        applet-FYZ097j0jy1ZZPx30GykP63J
-Stage 5             stage-G5Kpgv80zB02Q64zFf94G05F
-  Executable        applet-G5Kbv8Q0YXF4Q4xZBq4XQp6B
-Stage 6             stage-G9BfkZQ0fB6jZY7v1PfJ81F6
-  Executable        applet-G9bqvB80jy1vGgj44Qy7B4zK
-Stage 7             stage-G8V205j0fB6QGKXQ2gZ5pB1z
-  Executable        applet-G8V1zZQ0jy1qk9gj3j5xz1F3
-Stage 8             stage-F35zBKQ0jy1XpfzYPZY4bgX6
-  Executable        applet-G6vyyf00jy1kPkX9PJ1YkxB1
-Stage 9             stage-GFxkbjj03ZvJp10YPXZ9XFVJ
-  Executable        app-swiss-army-knife/4.7.1
-Stage 10            stage-GK71VJ80VQgQkjvz0vyQ8YV1
-  Executable        applet-GK5126Q0jy1ZVBFB6b3jx1p6
+                    [stage-GK71VJ80VQgQkjvz0vyQ8YV1.polyedge_csv (file)]
+                    [stage-GK71VJ80VQgQkjvz0vyQ8YV1.polyedge_html (file)]
+                    [stage-GK71VJ80VQgQkjvz0vyQ8YV1.polyedge_pdf (file)]
+Stage 0                     stage-Bz3YpP80jy1Y1pZKbZ35Bp0x
+  Executable                applet-GKXqZV80jy1QxF4yKYB4Y3Kz
+Stage 1                     stage-Byz9BJ80jy1k2VB9xVXBp0Fg
+  Executable                applet-FBPv1QQ0jy1zZ3vX7jybPz9Q
+Stage 2                     stage-F9GK4QQ0jy1qj14PPZxxq3VG
+  Executable                applet-G9yJ57j0jy1ZV0fxPZZXJ8FJ
+Stage 3                     stage-F28y4qQ0jy1fkqfy5v2b8byx
+  Executable                applet-FYZ097j0jy1ZZPx30GykP63J
+Stage 4                     stage-G5Kpgv80zB02Q64zFf94G05F
+  Executable                applet-G77X9Xj0jy1j9qgx259x37v6
+Stage 5                     stage-G9BfkZQ0fB6jZY7v1PfJ81F6
+  Executable                applet-G9bqvB80jy1vGgj44Qy7B4zK
+Stage 6                     stage-G8V205j0fB6QGKXQ2gZ5pB1z
+  Executable                applet-G8V1zZQ0jy1qk9gj3j5xz1F3
+Stage 7                     stage-F35zBKQ0jy1XpfzYPZY4bgX6
+  Executable                applet-G6vyyf00jy1kPkX9PJ1YkxB1
+Stage 8                     stage-GFxkbjj03ZvJp10YPXZ9XFVJ
+  Executable                app-swiss-army-knife/4.7.1
+Stage 9                     stage-GK71VJ80VQgQkjvz0vyQ8YV1
+  Executable                applet-GPpBJJ80jy1gFvGP4bk5fvyz
